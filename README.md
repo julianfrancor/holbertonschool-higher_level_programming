@@ -1,6 +1,4 @@
-#  Project title
-
-**Holberton School - Higher Level Programming**
+#  Holberton School - Higher Level Programming
 
 [Holberton School - Higher Level Programming](https://intranet.hbtn.io/projects/234)
 
