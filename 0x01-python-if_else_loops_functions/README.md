@@ -92,4 +92,7 @@ What you should learn from this project:
 ---
 
 ## Author
-* **Julian Franco Rua** - [julianfrancor](https://github.com/julianfrancor)
+
+* [GitHub - Julian Franco Rua](https://github.com/julianfrancor)
+
+* [LinkedIn - Julian Franco Rua](https://www.linkedin.com/in/julianfrancor/)
