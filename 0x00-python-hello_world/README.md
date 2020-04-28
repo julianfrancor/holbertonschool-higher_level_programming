@@ -1,63 +1,95 @@
-#  0x00. Python - Hello, World
+# 0x00. Python - Hello, World
 
 [0x00. Python - Hello, World](https://intranet.hbtn.io/projects/231)
 
 ![meme-1 python](https://user-images.githubusercontent.com/53787841/80412780-faf2af00-8893-11ea-8706-cde96c189eb2.jpg)
 
-##  General Information
+## Resources:books:
+Read or watch:
+* [The Python tutorial](https://intranet.hbtn.io/rltoken/fX5geNeDFcCtootbB_MqCQ)
+* [Whetting Your Appetite](https://intranet.hbtn.io/rltoken/JnsZOCXrWDkZn6iMo1uuFg)
+* [Using the Python Interpreter](https://intranet.hbtn.io/rltoken/AejXr_G-d8CSITEtpvwpRg)
+* [An Informal Introduction to Python](https://intranet.hbtn.io/rltoken/lUBuPMNcox9EqJ1Q3oVesQ)
+* [How To Use String Formatters in Python 3](https://intranet.hbtn.io/rltoken/z6mk3Yep2tJVSF6KsBAYrg)
+* [Learn to Program](https://intranet.hbtn.io/rltoken/gYgGXOth8N16KjUpXgO1uQ)
+* [PEP 8 – Style Guide for Python Code](https://intranet.hbtn.io/rltoken/BMIjFOY7HvWHSjHfNrkzPg)
 
- - Repository to learn and practice high level programming languages such as Python and JavaScript
- - Remember to uptade this and the address above as well
- - Why Python programming is awesome don’t forget to tweet today, with the hashtag #pythoniscool :)
- - Who created Python
- - Who is Guido van Rossum
- - Where does the name ‘Python’ come from
- - What is the Zen of Python
- - How to use the Python interpreter
- - How to print text and variables using print
- - How to use strings
- - What are indexing and slicing in Python
- - What is the official Holberton Python coding style and how to check your code with PEP 8
+---
+## Learning Objectives:bulb:
+What you should learn from this project:
 
-## Requirements
+* Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
+* Who created Python
+* Who is Guido van Rossum
+* Where does the name ‘Python’ come from
+* What is the Zen of Python
+* How to use the Python interpreter
+* How to print text and variables using print
+* How to use strings
+* What are indexing and slicing in Python
+* What is the official Holberton Python coding style and how to check your code with PEP 8
 
-### Python Scripts
+---
 
- - Allowed editors: vi, vim, emacs
- - All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
- - All your files should end with a new line
- - The first line of all your files should be exactly #!/usr/bin/python3
- - A README.md file at the root of the holbertonschool-higher_level_programming repo, containing a description of the repository
- - A README.md file, at the root of the folder of this project, is mandatory
- - Your code should use the PEP 8 style (version 1.7.*)
- - All your files must be executable
- - The length of your files will be tested using wc
+### [0. Run Python file](./0-run)
+* Write a Shell script that runs a Python script.
 
-### Shell Scripts
 
- - Allowed editors: vi, vim, emacs
- - All your scripts will be tested on Ubuntu 14.04 LTS
- - All your scripts should be exactly two lines long (wc -l file should print 2)
- - All your files should end with a new line
- - The first line of all your files should be exactly #!/bin/bash
- - All your files must be executable
+### [1. Run inline](./1-run_inline)
+* Write a Shell script that runs Python code.
 
-### C Scripts
 
- - Allowed editors: vi, vim, emacs
- - All your files will be compiled on Ubuntu 14.04 LTS
- - Your programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
- - All your files should end with a new line
- - Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
- - You are not allowed to use global variables
- - No more than 5 functions per file
- - In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
- - The prototypes of all your functions should be included in your header file called lists.h
- - Don’t forget to push your header file
- - All your header files should be include guarded
+### [2. Hello, print](./2-print.py)
+* Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+
+
+### [3. Print integer](./3-print_number.py)
+* Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
+
+
+### [4. Print float](./4-print_float.py)
+* Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
+
+
+### [5. Print string](./5-print_string.py)
+* Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+
+
+### [6. Play with strings](./6-concat.py)
+* Complete this source code to print Welcome to Holberton School!
+
+
+### [7. Copy - Cut - Paste](./7-edges.py)
+* Complete this source code
+
+
+### [8. Create a new sentence](./8-concat_edges.py)
+* Complete this source code to print object-oriented programming with Python, followed by a new line.
+
+
+### [9. Easter Egg](./9-easter_egg.py)
+* Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
+
+
+### [10. Linked list cycle](./10-check_cycle.c)
+* Technical interview preparation: 
+
+
+### [11. Hello, write](./100-write.py)
+* Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
+
+
+### [12. Compile](./101-compile)
+* Write a script that compiles a Python script file.
+
+
+### [13. ByteCode -> Python #1](./102-magic_calculation.py)
+* Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
+
+---
 
 ## Author
 
-[GitHub - Julian Franco Rua](https://github.com/julianfrancor)
+* [GitHub - Julian Franco Rua](https://github.com/julianfrancor)
 
-[LinkedIn - Julian Franco Rua](https://www.linkedin.com/in/julianfrancor/)
+* [LinkedIn - Julian Franco Rua](https://www.linkedin.com/in/julianfrancor/)
