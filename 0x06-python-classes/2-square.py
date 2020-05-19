@@ -20,6 +20,10 @@ class Square:
     """
 
     def __init__(self, size=0):
+        """Initialization of the instance attributes
+            Args:
+            size(int): private, zero or positive number
+        """
         if type(size) is not int:
             raise TypeError("size must be an integer")
         if size < 0:
