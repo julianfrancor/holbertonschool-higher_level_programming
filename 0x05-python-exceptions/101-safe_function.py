@@ -6,6 +6,8 @@ def safe_function(fct, *args):
         return result
     except (ZeroDivisionError, IndexError) as julian:
         print("Exception: {}".format(julian), file=sys.stderr)
+        return None
+
 
 """
 Write a function that executes a function safely.
