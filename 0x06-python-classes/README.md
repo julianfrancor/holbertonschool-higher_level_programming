@@ -9,7 +9,7 @@ Read or watch:
 * [Object-Oriented Programming (OOP) in Python 3](https://realpython.com/python3-object-oriented-programming/)
 * [Object Oriented Programming - MIT Video](https://www.youtube.com/watch?v=-DP1i2ZU9gk)
 * [WHat is Object-oriented programming - EDT](https://www.youtube.com/watch?v=DlphYPc_HKk)
-* [Python Classes and Objects Python Tutorial Learn Python Programming - Socratica] (https://www.youtube.com/watch?v=apACNr7DC_s)
+* [Python Classes and Objects Python Tutorial Learn Python Programming - Socratica](https://www.youtube.com/watch?v=apACNr7DC_s)
 
 
 ---
