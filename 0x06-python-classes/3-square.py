@@ -6,9 +6,10 @@ Here we are creating a class Square that defines a square.
 We are using the special method __init__ to initialize the
 data attribute size, which is a private instance attribute
 __size.
-Also, we are rasing some exceptions in case the data "size"
+we are rasing some exceptions in case the data "size"
 that enters to initialize the object, is not intiger or is
 less than cero.
+we are defining a method to calculate the area of the square
 """
 
 
