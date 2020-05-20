@@ -110,7 +110,7 @@ class Square:
             print()
             return
 
-        for i in range(0, self.__position[1]):
+        for i in range(self.__position[1]):
             print()
-        for j in range(0, self.__size):
-            print("{}{}".format(" " * self.__position[0], "#" * self.__size))
+        for i in range(self.__size):
+            print((" " * self.__position[0]) + ("#" * self.__size))
