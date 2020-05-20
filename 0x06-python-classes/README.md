@@ -9,7 +9,13 @@ Read or watch:
 * [Object-Oriented Programming (OOP) in Python 3](https://realpython.com/python3-object-oriented-programming/)
 * [Object Oriented Programming - MIT Video](https://www.youtube.com/watch?v=-DP1i2ZU9gk)
 * [WHat is Object-oriented programming - EDT](https://www.youtube.com/watch?v=DlphYPc_HKk)
-* [Python Classes and Objects Python Tutorial Learn Python Programming - Socratica](https://www.youtube.com/watch?v=apACNr7DC_s)
+* [Python Classes and Objects || Python Tutorial || Learn Python Programming - Socratica](https://www.youtube.com/watch?v=apACNr7DC_s)
+* [Docstrings Format](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
+* [Docstring in Python - OOP](https://www.datacamp.com/community/tutorials/docstrings-python)
+* [Docstrings in Python](https://www.datacamp.com/community/tutorials/docstrings-python)
+* [Validate attributes of an instance of a class](https://stackoverflow.com/questions/2825452/correct-approach-to-validate-attributes-of-an-instance-of-class)
+* [Python isinstance()](https://www.programiz.com/python-programming/methods/built-in/isinstance)
+* [Object Oriented Programming in Python- A walkthrough](https://medium.com/@deva.r.p/object-oriented-programming-in-python-a-cheatsheet-7ff4711b9eea)
 
 
 ---
