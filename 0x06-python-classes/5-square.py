@@ -11,6 +11,7 @@ that enters to initialize the object, is not intiger or is
 less than cero.
 we are defining a method to calculate the area of the square
 we are using @property and @size.setter
+we are creating a method to print square
 """
 
 
