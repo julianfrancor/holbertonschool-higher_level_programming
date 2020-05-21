@@ -2,6 +2,7 @@
 
 ## Resources:books:
 Read or watch:
+* [A simple introduction to Test Driven Development with Python](https://www.freecodecamp.org/news/learning-to-test-with-python-997ace2d8abe/)
 * [doctest — Test interactive Python examples (until “26.2.3.7. Warnings” included)](https://docs.python.org/3.4/library/doctest.html)
 * [doctest – Testing through documentation](https://pymotw.com/3/doctest/)
 * [Pruebas de Unidad en Python || Tutorial de Python || Aprende a Programar en Python - Socratica](https://www.youtube.com/watch?v=1Lfv5tUGsn8)
