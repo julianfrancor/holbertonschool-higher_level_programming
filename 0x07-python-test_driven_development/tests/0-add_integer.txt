@@ -1,0 +1,100 @@
+IMPORT
+		>>> add_integer = __import__('0-add_integer').add_integer
+
+CASES
+
+CHECK THE DATA TYPE
+Test 0: Checks the type
+		>>> type(add_integer(7, 9))
+		<type 'int'>
+		>>> type(add_integer(2.3, 4.9))
+		<type 'int'>
+
+Test 1: Adds two intigers
+		>>> add_integer(7, 9)
+		16
+		>>> add_integer(20, 1234)
+		1254
+		>>> add_integer(01, 34)
+		35
+
+Test 2: Adds two floats
+		>>> add_integer(7.2, 3.5)
+		10
+		>>> add_integer(2.5, 4.5)
+		6
+		>>> add_integer(9.5, 9.6)
+		18
+
+Test 3: Adds one int and one float
+		>>> add_integer(2, 4.5)
+		6
+		>>> add_integer(3.2, 9)
+		12
+		>>> add_integer(9.9, 102.3)
+		111
+
+Test 4: Adds one int and one string
+		>>> add_integer("Hola mundo!", 9)
+		Traceback (most recent call last):
+			...
+		TypeError: a must be an integer
+
+		>>> add_integer(7, 'hello world')
+		Traceback (most recent call last):
+			...
+		TypeError: b must be an integer
+
+Test 4: Adds two strings
+		>>> add_integer("Hello", "world!")
+		Traceback (most recent call last):
+			...
+		TypeError: a must be an integer
+
+Test 5: Adds two strings cast to int
+		>>> add_integer(int("hola"), int("mundo"))
+		Traceback (most recent call last):
+			...
+		ValueError: invalid literal for int() with base 10: 'hola'
+
+Test 6: Adds one string cast to float and a intiger
+		>>> add_integer(float("hola"), 1)
+		Traceback (most recent call last):
+			...
+		ValueError: could not convert string to float: hola
+
+Test 7: Adds two negative intigers
+		>>> add_integer(-2, -7)
+		-9
+
+Test 8: Adds one boolean and one int
+		>>> add_integer(True, 1)
+		Traceback (most recent call last):
+			...
+		TypeError: a must be an integer
+
+		>>> add_integer(1, False)
+		Traceback (most recent call last):
+			...
+		TypeError: b must be an integer
+
+		>>> add_integer(True, "hola")
+		Traceback (most recent call last):
+			...
+		TypeError: a must be an integer
+
+Test 9: User sends just one value
+		>>> add_integer(2)
+		100
+
+Test 10: User sends no value
+		>>> add_integer()
+		Traceback (most recent call last):
+			...
+		TypeError: add_integer() takes at least 1 argument (0 given)
+
+Test 11: Adds infinity float('inf') and an intiger
+		>>> add_integer(float("inf"), 3)
+		Traceback (most recent call last):
+			...
+		OverflowError: cannot convert float infinity to integer
