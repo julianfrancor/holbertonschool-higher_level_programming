@@ -16,7 +16,7 @@ def say_my_name(first_name, last_name=""):
             TypeError: last_name must be a string
 
     Returns:
-            Returns a new matrix
+            No return value
     """
 
     if not isinstance(first_name, str):
