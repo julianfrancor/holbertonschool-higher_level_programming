@@ -1,0 +1,37 @@
+IMPORT
+		>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+CASES
+
+CHECK THE DATA TYPE
+Test 0: Checks if is printing correctly
+		>>> say_my_name("John", "Smith")
+		My name is John Smith
+
+Test 1: Checks the data type
+		>>> type(say_my_name("John", "Smith"))
+		My name is John Smith
+		<type 'NoneType'>
+
+Test 2: No input to say_my_name
+		>>> say_my_name()
+		Traceback (most recent call last):
+			...
+		TypeError: say_my_name() takes at least 1 argument (0 given)
+
+Test 3: Just first name
+		>>> say_my_name("Roberto", 9)
+		Traceback (most recent call last):
+			...
+		TypeError: last_name must be a string
+
+Test 4: Just first name
+		>>> say_my_name("Julian")
+		My name is Julian 
+
+Test 5: Just first name
+		>>> say_my_name(7, 9)
+		Traceback (most recent call last):
+			...
+		TypeError: first_name must be a string
+
