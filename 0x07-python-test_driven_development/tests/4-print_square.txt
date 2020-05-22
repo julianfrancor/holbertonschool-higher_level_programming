@@ -1,0 +1,41 @@
+IMPORT
+		>>> print_square = __import__('4-print_square').print_square
+
+CASES
+
+CHECK THE DATA TYPE
+Test 0: Checks if is printing correctly
+		>>> print_square(5)
+		#####
+		#####
+		#####
+		#####
+		#####
+
+Test 1: User sends a negative number
+		>>> print_square(-5)
+		Traceback (most recent call last):
+			...
+		ValueError: size must be >= 0
+
+Test 2: size is zero
+		>>> print_square(0)
+		
+
+Test 3: User sends nothing
+		>>> print_square()
+		Traceback (most recent call last):
+			...
+		TypeError: print_square() takes exactly 1 argument (0 given)
+
+Test 4: Size is float
+		>>> print_square(4.5)
+		Traceback (most recent call last):
+			...
+		TypeError: size must be an integer
+
+Test 4: Size is float
+		>>> print_square(-4.5)
+		Traceback (most recent call last):
+			...
+		TypeError: size must be an integer
