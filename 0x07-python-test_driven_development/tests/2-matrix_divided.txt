@@ -1,0 +1,77 @@
+IMPORT
+		>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+CHECK THE DATA TYPE
+Test 0: Checks the type
+		>>> matrix = [[1, 2, 3], [4, 5, 6]]
+		>>> type(matrix)
+		<type 'list'>
+
+Test 1: Division by zero
+		>>> matrix_0 = [[1, 2, 3], [4, 5, 6]]
+		>>> matrix_divided(matrix_0, 0)
+		Traceback (most recent call last):
+			...
+		ZeroDivisionError: division by zero
+
+Test 2: matrix with all its elements of type intiger
+		>>> matrix_1 = [[1, 2, 3], [4, 5, 6]]
+		>>> matrix_divided(matrix_1, 3)
+		[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Test 3: matrix with rows of diferent size
+		>>> matrix_2 = [[1, 2, 3], [4, 5, 6, 7]]
+		>>> matrix_divided(matrix_2, 3)
+		Traceback (most recent call last):
+			...
+		TypeError: Each row of the matrix must have the same size
+
+Test 4: matrix with all its elements of type float
+		>>> matrix_3 = [[1.3, 2.5, 3.6, 4.5], [4.7, 5.3, 6, 7.2]]
+		>>> matrix_divided(matrix_3, 3)
+		[[0.43, 0.83, 1.2, 1.5], [1.57, 1.77, 2.0, 2.4]]
+
+Test 5: Adds one int and one string
+		>>> matrix_4 = "Hello world!"
+		>>> matrix_divided(matrix_4, 3)
+		Traceback (most recent call last):
+			...
+		TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test 6: matrix with one void row matrix
+		>>> matrix_6 = []
+		>>> matrix_divided(matrix_6, 3)
+		Traceback (most recent call last):
+			...
+		IndexError: list index out of range
+
+Test 7: matrix with integer rows, float rows
+		>>> matrix_7 = [[1, 2, 3, 3], [4.5, 5.4, 6.3, 7.7]]
+		>>> matrix_divided(matrix_7, 3)
+		[[0.33, 0.67, 1.0, 1.0], [1.5, 1.8, 2.1, 2.57]]
+
+Test 8: matrix with string rows and intigers
+		>>> matrix_8 = [[1, 3, "hello", "julian"], [4.5, 5.4, 6.3, 7.7]]
+		>>> matrix_divided(matrix_8, 3)
+		Traceback (most recent call last):
+			...
+		TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test 9: matrix negative intigers
+		>>> matrix_9 = [[-1, -2, -3], [-4, -5, -6]]
+		>>> matrix_divided(matrix_9, 3)
+		[[-0.33, -0.67, -1.0], [-1.33, -1.67, -2.0]]
+
+Test 10: checks when div is not a number
+		>>> matrix_10 = [[-1, -2, -3], [-4, -5, -6]]
+		>>> matrix_divided(matrix_10, "hello")
+		Traceback (most recent call last):
+			...
+		TypeError: div must be a number
+
+Test 11: matrix with rows of diferent size
+		>>> matrix_11 = [[1, 2, 3], [4, 5, 6, 7]]
+		>>> matrix_divided(matrix_11)
+		Traceback (most recent call last):
+			...
+		TypeError: matrix_divided() takes exactly 2 arguments (1 given)
