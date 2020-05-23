@@ -51,17 +51,11 @@ Test 6: Adds two strings cast to int
 			...
 		ValueError: invalid literal for int() with base 10: 'hola'
 
-Test 7: Adds one string cast to float and a intiger
-		>>> add_integer(float("hola"), 1)
-		Traceback (most recent call last):
-			...
-		ValueError: could not convert string to float: hola
-
-Test 8: Adds two negative intigers
+Test 7: Adds two negative intigers
 		>>> add_integer(-2, -7)
 		-9
 
-Test 9: Adds one boolean and one int
+Test 8: Adds one boolean and one int
 		>>> add_integer(True, 1)
 		Traceback (most recent call last):
 			...
@@ -77,23 +71,23 @@ Test 9: Adds one boolean and one int
 			...
 		TypeError: a must be an integer
 
-Test 10: User sends just one value
+Test 9: User sends just one value
 		>>> add_integer(2)
 		100
 
-Test 11: User sends no value
+Test 10: User sends no value
 		>>> add_integer()
 		Traceback (most recent call last):
 			...
 		TypeError: add_integer() takes at least 1 argument (0 given)
 
-Test 12: Adds infinity float('inf') and an intiger
+Test 11: Adds infinity float('inf') and an intiger
 		>>> add_integer(float("inf"), 3)
 		Traceback (most recent call last):
 			...
 		OverflowError: cannot convert float infinity to integer
 
-Test 13: Adds infinity float('NaN') and an intige
+Test 12: Adds infinity float('NaN') and an intige
 		>>> add_integer(float('NaN'), 0)
 		Traceback (most recent call last):
 			...
