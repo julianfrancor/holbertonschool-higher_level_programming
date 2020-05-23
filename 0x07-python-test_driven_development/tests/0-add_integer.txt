@@ -4,12 +4,6 @@ IMPORT
 CASES
 
 CHECK THE DATA TYPE
-Test 0: Checks the type
-		>>> type(add_integer(7, 9))
-		<class 'int'>
-		>>> type(add_integer(2.3, 4.9))
-		<class 'int'>
-
 Test 1: Adds two intigers
 		>>> add_integer(7, 9)
 		16
