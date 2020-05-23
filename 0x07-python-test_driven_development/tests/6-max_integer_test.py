@@ -35,53 +35,17 @@ class TestMaxIntiger(unittest.TestCase):
 		'''
 			Testing no intigers given
 		'''
-		self.assertEqual(max_integer([]), 12)
-
-	def test_max_zero(self):
-		result = max_integer([0])
-		self.assertEqual(result, 0)
-
-	def test_max_only(self):
-		result = max_integer([4])
-		self.assertEqual(result, 4)
-
-	def test_max_onenegative(self):
-		result = max_integer([-4])
-		self.assertEqual(result, -4)
-
-	def test_max_twoint(self):
-		result = max_integer([3, 6])
-		self.assertEqual(result, 6)
-
-	def test_max_negatives(self):
-		result = max_integer([-6, -7, -15])
-		self.assertEqual(result, -6)
-
-	def test_max_onezero(self):
-		result = max_integer([8, 0, 3])
-		self.assertEqual(result, 8)
-
-	def test_max_float(self):
-		result = max_integer([8, 10.5, 3])
-		self.assertEqual(result, 10.5)
-
-	def test_max_negfloat(self):
-		result = max_integer([8, -10.5, 3])
-		self.assertEqual(result, 8)
-
-	def test_max_zeros(self):
-		result = max_integer([0, 0, 0])
-		self.assertEqual(result, 0)
-
-	def test_max_string(self):
-		result = max_integer(["cucu"])
-		self.assertEqual(result, "cucu")
-
-	def test_max_morestrings(self):
-		result = max_integer(["cucu", "hp", "x"])
-		self.assertEqual(result, "x")
-
-	def test_max_error(self):
-		result = ["cucu", 5.5, 6]
 		with self.assertRaises(TypeError):
-			max_integer(result)
+			max_integer(["hola", "mundo", 4, 7])
+
+	def test_parameter_zero(self):
+		'''
+			Testing when zero is passed
+		'''
+		self.assertEqual(max_integer([0]), 0)
+
+	def test_only_strings(self):
+		'''
+			Testing only strings passed
+		'''
+		self.assertEqual(max_integer(["hello", "string2", "string3", "x"]), "x")
