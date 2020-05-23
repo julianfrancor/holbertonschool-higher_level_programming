@@ -9,7 +9,7 @@ Test 1: Adds two intigers
 		16
 		>>> add_integer(20, 1234)
 		1254
-		>>> add_integer(01, 34)
+		>>> add_integer(1, 34)
 		35
 
 Test 2: Adds two floats
@@ -87,3 +87,9 @@ Test 11: Adds intiger and dictionary
 		Traceback (most recent call last):
 			...
 		TypeError: b must be an integer
+
+Test 10: No parameters given
+		>>> add_integer()
+		Traceback (most recent call last):
+			...
+		TypeError: add_integer() missing 1 required positional argument: 'a'
