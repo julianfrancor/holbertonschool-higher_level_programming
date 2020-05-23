@@ -13,12 +13,29 @@ class TestMaxIntiger(unittest.TestCase):
 		with self.assertRaises(TypeError):
 			max_integer(None)
 
-	def test_max_none(self):
+	def test_right_output(self):
 		'''
-			Testing when None is passed
+			Testing the right output
 		'''
-		result2 = max_integer([None])
-		self.assertEqual(result2, None)
+		self.assertEqual(max_integer([3, 5, 6, 12]), 12)
+
+	def test_no_parameter(self):
+		'''
+			Testing no parameter given
+		'''
+		self.assertIsNone(max_integer())
+
+	def test_equal_valuas(self):
+		'''
+			Testing same values
+		'''
+		self.assertEqual(max_integer([4, 4, 4, 4]), 4)
+
+	def test_not_intigers(self):
+		'''
+			Testing no intigers given
+		'''
+		self.assertEqual(max_integer([]), 12)
 
 	def test_max_zero(self):
 		result = max_integer([0])
