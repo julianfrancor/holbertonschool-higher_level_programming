@@ -6,6 +6,11 @@ max_integer = __import__('6-max_integer').max_integer
 
 
 class TestMaxIntiger(unittest.TestCase):
+	"""
+	class to test  max_intiger function
+	with Unit test
+	"""
+
 	def test_none_value(self):
 		'''
 			Testing when None is passed
@@ -18,6 +23,12 @@ class TestMaxIntiger(unittest.TestCase):
 			Testing the right output
 		'''
 		self.assertEqual(max_integer([3, 5, 6, 12]), 12)
+
+	def test_negatives(self):
+		'''
+			Testing negative intigers
+		'''
+		self.assertEqual(max_integer([3, -5, -6, 12]), 12)
 
 	def test_no_parameter(self):
 		'''
