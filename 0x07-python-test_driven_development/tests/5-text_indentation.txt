@@ -19,8 +19,8 @@ Test 1: User sends an float
 
 
 Test 2: Test a random text
-		>> text = "Hello.?beautiful:.world!"
-		>>> text_indentation(text)
+		>> text_1 = "Hello.?beautiful:.world!"
+		>>> text_indentation(text_1)
 		Hello.
 		<BLANKLINE>
 		?
