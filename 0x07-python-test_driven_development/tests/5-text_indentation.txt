@@ -10,13 +10,11 @@ Test 0: User sends an integer
 			...
 		TypeError: text must be a string
 
-
 Test 1: User sends an float
 		>>> text_indentation(3.8)
 		Traceback (most recent call last):
 			...
 		TypeError: text must be a string
-
 
 Test 2: Test a random text
 		>> text_1 = "Hello.?beautiful:.world!"
@@ -31,12 +29,5 @@ Test 2: Test a random text
 		<BLANKLINE>
 		world!
 
-
 Test 3: User sends empty string
 		>>> text_indentation("")
-
-Test 4: Size is float
-		text_indentation(4.5)
-		Traceback (most recent call last):
-			...
-		TypeError: text must be a string
