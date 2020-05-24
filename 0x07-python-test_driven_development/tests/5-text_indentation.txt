@@ -18,7 +18,7 @@ Test 1: User sends an float
 		TypeError: text must be a string
 
 Test 2: Test a random text
-		>> text_1 = "Hello.?beautiful:.world!"
+		>>> text_1 = "Hello.?beautiful:.world!"
 		>>> text_indentation(text_1)
 		Hello.
 		<BLANKLINE>
