@@ -31,3 +31,9 @@ Test 2: Test a random text
 
 Test 3: User sends empty string
 		>>> text_indentation("")
+
+Test 3: User sends empty string
+		>>> text_indentation()
+		Traceback (most recent call last):
+			...
+		TypeError: text_indentation() missing 1 required positional argument: 'text'
