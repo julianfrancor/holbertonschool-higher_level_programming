@@ -11,13 +11,6 @@ class TestMaxIntiger(unittest.TestCase):
 	with Unit test
 	"""
 
-	def test_none_value(self):
-		'''
-			Testing when None is passed
-		'''
-		with self.assertRaises(TypeError):
-			max_integer(None)
-
 	def test_right_output(self):
 		'''
 			Testing the right output
@@ -54,6 +47,12 @@ class TestMaxIntiger(unittest.TestCase):
 			Testing when zero is passed
 		'''
 		self.assertEqual(max_integer([0]), 0)
+
+	def test_no_parameter(self):
+		'''
+			Testing when no parameter is passed
+		'''
+		self.assertEqual(max_integer([]), None)
 
 	def test_only_strings(self):
 		'''
