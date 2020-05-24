@@ -5,11 +5,6 @@ IMPORT
 		>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
 
 CASES
-		>>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4], [3, 4]])
-		Traceback (most recent call last):
-		...
-		ValueError: m_a and m_b can't be multiplied
-
 		>>> matrix_mul([[1,2]], [[3,4], [5,6]])
 		[[13, 16]]
 
@@ -17,6 +12,9 @@ CASES
 		[[1]]
 
 EXCEPTIONS
+		>>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4], [3, 4]])
+		Traceback (most recent call last):
+		ValueError: m_a and m_b can't be multiplied
 
 		>>> matrix_mul([["1", 4]], [[1, 2]])
 		Traceback (most recent call last):
