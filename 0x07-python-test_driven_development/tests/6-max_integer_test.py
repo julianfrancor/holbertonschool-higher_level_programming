@@ -54,6 +54,30 @@ class TestMaxIntiger(unittest.TestCase):
 		'''
 		self.assertEqual(max_integer([]), None)
 
+	def test_only_one_parameter(self):
+		'''
+			Testing when only one parameter is passed
+		'''
+		self.assertEqual(max_integer([2]), 2)
+
+	def test_max_parameter_first(self):
+		'''
+			max element is first
+		'''
+		self.assertEqual(max_integer([4, 2, 3, 2, 1]), 4)
+
+	def test_max_parameter_middle(self):
+		'''
+			max element in the middle
+		'''
+		self.assertEqual(max_integer([1, 2, 3, 4, 3, 2, 1]), 4)
+
+	def test_max_parameter_last(self):
+		'''
+			max element is last
+		'''
+		self.assertEqual(max_integer([1, 2, 3, 2, 4]), 4)
+
 	def test_only_strings(self):
 		'''
 			Testing only strings passed
