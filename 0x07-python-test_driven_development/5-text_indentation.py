@@ -10,10 +10,11 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     delimiters = [".", "?", ":"]
-    temp = 0
-    for i, c in enumerate(text):
-        if c in delimiters:
-            print(text[temp: i + 1].strip(), end="\n\n")
-            temp = i + 1
-        elif i == len(text) - 1:
-            print(text[temp: i + 1].strip(), end="")
+    aux = "."
+    for char in text:
+        if char is " " and aux in delimiters:
+            continue
+        print(char, end="")
+        if char in delimiters:
+            print("\n")
+        aux = char
