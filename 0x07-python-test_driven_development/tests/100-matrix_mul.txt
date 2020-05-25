@@ -12,6 +12,9 @@ CASES
 		>>> matrix_mul([[2]], [[3]])
 		[[6]]
 
+		>>> matrix_mul([[-2]], [[3]])
+		[[-6]]
+
 EXCEPTIONS
 2. matrix that cannot be multiplied
 		>>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4], [3, 4]])
