@@ -2,7 +2,9 @@
 
 
 """class Rectangle that defines a rectangle and define
-the methods getter and setter for the attributes width and height"""
+the methods getter and setter for the attributes width and height
+Adding method __str__ to print the rectangle
+"""
 
 
 class Rectangle:
