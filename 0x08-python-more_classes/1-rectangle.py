@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 
-"Empty class Rectangle that defines a rectangle"
+"""class Rectangle that defines a rectangle and define
+the methods getter and setter for the attributes width and height"""
 
 
 class Rectangle:
