@@ -19,7 +19,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """Initialization of the instance attributes
             Args:
-            size(int): private, zero or positive number
+            width(int): private, zero or positive number
+            height(int): private, zero or positive number
         """
         self.width = width
         self.height = height
