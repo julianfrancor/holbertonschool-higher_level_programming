@@ -26,6 +26,8 @@ EXCEPTIONS
 		Traceback (most recent call last):
 		TypeError: m_a should contain only integers or floats
 
+
+
 		>>> matrix_mul([[1, 3]], [["5", 6]])
 		Traceback (most recent call last):
 		TypeError: m_b should contain only integers or floats
@@ -50,12 +52,24 @@ EXCEPTIONS
 		Traceback (most recent call last):
 		TypeError: matrix_mul() takes 2 positional arguments but 3 were given
 
-6. Matrix empty b
-		>>> matrix_mul('Hoberton', [])
+		>>> matrix_mul(True, [[1, 2, 3]])
+		Traceback (most recent call last):
+		TypeError: m_a must be a list
+
+		>>> matrix_mul((1, 2, 4), [[1, 2, 3]])
 		Traceback (most recent call last):
 		TypeError: m_a must be a list
 
 5. Matrix empty a
+		>>> matrix_mul('Hoberton', [])
+		Traceback (most recent call last):
+		TypeError: m_a must be a list
+
+		>>> matrix_mul([], [[1, 2, 3]])
+		Traceback (most recent call last):
+		ValueError: m_a can't be empty
+
+6. Matrix empty b
 		>>> matrix_mul([[1]], [])
 		Traceback (most recent call last):
 		ValueError: m_b can't be empty
