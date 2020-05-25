@@ -66,7 +66,7 @@ class Rectangle:
             from other code.
             Return: the data value
         """
-        return self.__width
+        return self.__height
 
     @height.setter
     def height(self, value):
