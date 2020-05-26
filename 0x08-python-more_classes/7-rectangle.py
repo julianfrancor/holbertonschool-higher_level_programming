@@ -112,11 +112,11 @@ class Rectangle:
         string = ""
         if (self.__width == 0) or (self.__height == 0):
             return string
-        if type(self.print_symbol) is not str:
+        if not isinstance(self.print_symbol, str):
             self.print_symbol = str(self.print_symbol)
         for i in range(self.__height - 1):
-            string += ((self.print_symbol * self.__width) + "\n")
-        string += ((self.print_symbol * self.__width))
+            string += (self.print_symbol * self.__width) + "\n"
+        string += (self.print_symbol * self.__width)
         return string
 
     def __repr__(self):
@@ -132,9 +132,3 @@ class Rectangle:
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
-    def print_symbol(self):
-        """The method __del__ is the instance method called when
-            an instance is deleted
-        """
-        Rectangle.number_of_instances -= 1
-        print("Bye rectangle...")
