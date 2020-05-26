@@ -158,4 +158,3 @@ class Rectangle:
            so it will create a the same class type when using cls
         """
         return cls(size, size)
-
