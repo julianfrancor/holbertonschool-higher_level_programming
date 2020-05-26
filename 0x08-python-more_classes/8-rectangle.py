@@ -123,7 +123,8 @@ class Rectangle:
         """Method to return the representation of the object
            "formal" printing
             repr() should return a string representation
-            of the rectangle to be able to recreate a new instance by using eval()
+            of the rectangle to be able to recreate a new instance
+            by using eval()
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
