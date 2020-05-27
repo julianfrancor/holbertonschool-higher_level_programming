@@ -8,6 +8,17 @@ Read or watch:
 * [Mutation](https://intranet.hbtn.io/rltoken/UbL96sV3cIxewdQPW_zwRw)
 * [9.12. Cloning lists](https://intranet.hbtn.io/rltoken/-t_1VsmKlgWHszL5y1YiKA)
 * [Python tuples: immutable but potentially changing](https://intranet.hbtn.io/rltoken/IdBAdTYNLuS3YpRRQIam6Q)
+* [__slots__ Magic](https://book.pythontips.com/en/latest/__slots__magic.html)
+* [__setattr__](https://stackoverflow.com/questions/17020115/how-to-use-setattr-correctly-avoiding-infinite-recursion)
+* [Immutable vs Mutable types](https://stackoverflow.com/questions/8056130/immutable-vs-mutable-types)
+* [Mutable Data](http://composingprograms.com/pages/24-mutable-data.html#sequence-objects)
+* [Python tuples: immutable but potentially changing](http://radar.oreilly.com/2014/10/python-tuples-immutable-but-potentially-changing.html)
+* [Python macros, NSMALLPOSINTS vs NSMALLNEGINTS](https://stackoverflow.com/questions/44787980/python-macros-nsmallposints-vs-nsmallnegints)
+* [Python “is” operator behaves unexpectedly with integers "262 object are created by default"](https://stackoverflow.com/questions/306313/is-operator-behaves-unexpectedly-with-integers)
+* [Operator Overloading in Python "+" and "+="](https://www.geeksforgeeks.org/operator-overloading-in-python/)
+* [Operator Overloading in Python "+" and "+="](https://docs.python.org/3/reference/datamodel.html)
+* [Operator Overloading in Python "+" and "+="](https://realpython.com/operator-function-overloading/)
+• [Operator Overloading in Python "+" and "+="](https://realpython.com/operator-function-overloading/)
 
 ---
 ## Learning Objectives:bulb:
