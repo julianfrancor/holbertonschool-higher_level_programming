@@ -10,14 +10,14 @@ Test1: matrix can't be multiplied
 		>>> lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4], [3, 4]])
 		Traceback (most recent call last):
 		...
-		ValueError: m_a and m_b can't be multiplied
+		ValueError: shapes (2,2) and (3,2) not aligned: 2 (dim 1) != 3 (dim 0)
 
 1. ma = List of lists of number / mb = List of lists of number
 		>>> lazy_matrix_mul([[1,2]], [[3,4], [5,6]])
-		[[13, 16]]
+		array([[13, 16]])
 
 		>>> lazy_matrix_mul([[1]], [[1]])
-		[[1]]
+		array([[1]])
 
 EXCEPTIONS
 ma = String / mb = List of lists of number => TypeError: m_a must be a list
