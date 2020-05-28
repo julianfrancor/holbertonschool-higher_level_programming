@@ -14,10 +14,10 @@ Test1: matrix can't be multiplied
 
 1. ma = List of lists of number / mb = List of lists of number
 		>>> lazy_matrix_mul([[1,2]], [[3,4], [5,6]])
-		array([[13, 16]])
+		[[13, 16]]
 
 		>>> lazy_matrix_mul([[1]], [[1]])
-		array([[1]])
+		[[1]]
 
 EXCEPTIONS
 ma = String / mb = List of lists of number => TypeError: m_a must be a list
