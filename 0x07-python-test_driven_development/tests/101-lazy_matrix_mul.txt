@@ -14,10 +14,10 @@ Test1: matrix can't be multiplied
 
 1. ma = List of lists of number / mb = List of lists of number
 		>>> lazy_matrix_mul([[1,2]], [[3,4], [5,6]])
-		[[13, 16]]
+		array([[13, 16]])
 
 		>>> lazy_matrix_mul([[1]], [[1]])
-		[[1]]
+		array([[1]])
 
 EXCEPTIONS
 ma = String / mb = List of lists of number => TypeError: m_a must be a list
@@ -33,17 +33,17 @@ ma = List of lists of number / mb = string => TypeError: m_b must be a list
 ma = List of lists of not number / mb = List of lists of number => TypeError: m_a should contain only integers or floats
 		>>> lazy_matrix_mul([["1", 4]], [[1, 2]])
 		Traceback (most recent call last):
-		TypeError: invalid data type for einsum
+		ValueError: shapes (1,2) and (1,2) not aligned: 2 (dim 1) != 1 (dim 0)
 
 ma = List of lists of number / mb = List of lists of not number => TypeError: m_b should contain only integers or floats
 		>>> lazy_matrix_mul([[1, 3]], [['5', 6]])
 		Traceback (most recent call last):
-		TypeError: invalid data type for einsum
+		ValueError: shapes (1,2) and (1,2) not aligned: 2 (dim 1) != 1 (dim 0)
 
 ma = List of lists of number various size / mb = List of lists of number => TypeError: each row of m_a must should be of the same size
 		>>> lazy_matrix_mul([[1, 3, 4], [2, 5]], [[1]])
 		Traceback (most recent call last):
-		ValueError: shapes (2,2) and (1,1) not aligned: 2 (dim 1) != 1 (dim 0)
+		ValueError: setting an array element with a sequence.
 
 ma = List of lists of number / mb = List of lists of number various size => TypeError: each row of m_b must should be of the same size
 		>>> lazy_matrix_mul([[1, 2]], [[1, 2], [1]])
@@ -93,3 +93,5 @@ Test present: missing one argument
 		>>> lazy_matrix_mul([[1, 2], [3, 4], [3, 4]] [[5, 6, 1], [7, 8, 2]])
 		Traceback (most recent call last):
 		TypeError: list indices must be integers, not tuple
+
+
