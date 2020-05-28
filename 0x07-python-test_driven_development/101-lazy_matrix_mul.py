@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Function that multiplies 2 matrices by using the module NumPy"""
-
-
+"""Function that multiplies 2 matrices
+by using the module NumPy
+"""
 import numpy
 
 
