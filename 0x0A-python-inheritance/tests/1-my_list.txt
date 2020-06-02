@@ -18,24 +18,24 @@ Test 0: Checks if is printing correctly
     >>> print(my_list)
     [5, 1, 4, 2, 3]
 
-Test 2: Empty list
+Test 1: Empty list
     >>> c = MyList()
     >>> print(c)
     []
     >>> c.print_sorted()
     []
 
-Test 2: Empty list
+Test 2: isinstance(object, list)
     >>> d = MyList()
     >>> isinstance(d, list)
     True
 
-Test 2: Empty list
+Test 3: issubclass(type(object), list)
     >>> e = MyList()
     >>> issubclass(type(e), list)
     True
 
-Test 2: Empty list
+Test 4: list with negative intigers
     >>> a = MyList()
     >>> a.append(-5)
     >>> a.append(-4)
@@ -47,7 +47,7 @@ Test 2: Empty list
     >>> print(a)
     [-5, -4, -10]
 
-Test 2: Empty list
+Test 4: list with negative intigers
     >>> b = MyList()
     >>> b.append(-20)
     >>> b.append(-4)
