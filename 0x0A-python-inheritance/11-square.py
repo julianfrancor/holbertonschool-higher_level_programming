@@ -9,6 +9,7 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
+    """docstring"""
 
     def __init__(self, size):
         """
