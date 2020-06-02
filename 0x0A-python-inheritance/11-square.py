@@ -7,15 +7,18 @@ class Square(Rectangle):
 
     def __init__(self, size):
         """
-        size must be a positive integer,
-        validated by integer_validator
-        """
-        self.integer_validator("size", size)
-        self.__size = size
+        we have to override __init__.
+        Overriding is altering or replacing a method
+        of the superclass with a new method (with the same name)
+        in the subclass.
+        Any method can be overridden, not just __init__.
 
-    def area(self):
-        """area of the squeare"""
-        return self.__size * self.__size
+        SUPER function is a way to call code on the parent class.
+        it returns the object as an instance of the parent class,
+        allowing us to call the parent method directly
+        """
+        self.__size = size
+        super().__init__(size, size)
 
     def __str__(self):
         """method to print a string"""
