@@ -9,6 +9,7 @@ class MyList(list):
     Arguments:
         list
     """
+
     def print_sorted(self):
         """method that prints the list, but sorted (ascending sort)
         """
