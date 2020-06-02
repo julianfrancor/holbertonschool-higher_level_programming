@@ -3,5 +3,7 @@
 """empty class BaseGeometry"""
 
 
-class BaseGeometry(object):
+class BaseGeometry:
+    """docstring
+    """
     pass
