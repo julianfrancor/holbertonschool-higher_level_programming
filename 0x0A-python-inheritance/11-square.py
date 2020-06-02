@@ -23,6 +23,7 @@ class Square(Rectangle):
         it returns the object as an instance of the parent class,
         allowing us to call the parent method directly
         """
+        self.integer_validator("size", size)
         self.__size = size
         super().__init__(size, size)
 
