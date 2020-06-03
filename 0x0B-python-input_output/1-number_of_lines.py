@@ -8,8 +8,9 @@ function that returns the number of lines of a text file
 def number_of_lines(filename=""):
     """
     with:
-        It is good practice to use the "with" keyword when dealing with file objects.
-        This has the advantage that the file is properly closed after its suite finishes,
+        It is good practice to use the "with" keyword when dealing
+        with file objects. This has the advantage that the file is
+        properly closed after its suite finishes,
         even if an exception is raised on the way.
         It is also much shorter than writing equivalent try-finally blocks
 
