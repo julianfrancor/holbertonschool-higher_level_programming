@@ -22,5 +22,5 @@ def read_file(filename=""):
     file is automatically added to the end. 'r+' opens the file for both reading and writing.
     The mode argument is optional; 'r' will be assumed if it’s omitted.
     """
-    with open("my_file_0.txt", mode="r", encoding="UTF8") as file:
+    with open(filename, mode="r", encoding="UTF8") as file:
         print(file.read())
