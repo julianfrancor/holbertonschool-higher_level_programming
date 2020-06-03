@@ -8,10 +8,10 @@ Read or watch:
 * [9.5.1. Multiple Inheritance](https://docs.python.org/3.4/tutorial/classes.html#multiple-inheritance)
 * [Basic inheritance](https://hub.packtpub.com/inheritance-python/)
 * [Learn to Program 10 : Inheritance Magic Methods](https://www.youtube.com/watch?v=d8kCdLCi6Lk)
-* [Finding what methods a Python object has](https://stackoverflow.com/questions/34439/finding-what-methods-a-python-object-has)
+* [Finding what methods a Python object has -  dir(obj)](https://stackoverflow.com/questions/34439/finding-what-methods-a-python-object-has)
 * [__eq__ and __ne__](https://hynek.me/articles/hashes-and-equality/)
-* [Set attribute - adds a new attribute to an object ](https://www.programiz.com/python-programming/methods/built-in/setattr)
-* [hasattr - checks if and object has the given named attribute](https://www.programiz.com/python-programming/methods/built-in/hasattr)
+* [**Setattr** attribute - adds a new attribute to an object ](https://www.programiz.com/python-programming/methods/built-in/setattr)
+* [**Hasattr** - checks if and object has the given named attribute](https://www.programiz.com/python-programming/methods/built-in/hasattr)
 * [__dict__ attribute ](https://codesachin.wordpress.com/2016/06/09/the-magic-behind-attribute-access-in-python/#:~:text=The%20__dict__%20attribute,attribute%20name%20to%20its%20value)
 
 ---
