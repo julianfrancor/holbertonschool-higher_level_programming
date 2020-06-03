@@ -1,44 +1,59 @@
->>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+IMPORT
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+INSTANTIATING
 >>> bg = BaseGeometry()
 
->>> bg.integer_validator("my_int", "Deiwin")
-Traceback (most recent call last):
-TypeError: my_int must be an integer
+CASES
+Test 0: String as a parameter
+    >>> bg.integer_validator("my_int", "Julian")
+    Traceback (most recent call last):
+    TypeError: my_int must be an integer
 
->>> bg.integer_validator("Edad", 0)
-Traceback (most recent call last):
-ValueError: Edad must be greater than 0
+Test 1: Zero as a parameter
+    >>> bg.integer_validator("age", 0)
+    Traceback (most recent call last):
+    ValueError: age must be greater than 0
 
->>> bg.integer_validator("distance", -4)
-Traceback (most recent call last):
-ValueError: distance must be greater than 0
+Test 2: Negative intiger as a parameter
+    >>> bg.integer_validator("distance", -4)
+    Traceback (most recent call last):
+    ValueError: distance must be greater than 0
 
->>> bg.area()
-Traceback (most recent call last):
-Exception: area() is not implemented
+Test 3: Implementation of the 'area' method
+    >>> bg.area()
+    Traceback (most recent call last):
+    Exception: area() is not implemented
 
->>> bg.integer_validator()
-Traceback (most recent call last):
-TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+Test 4: No parameters given
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
->>> bg.integer_validator("Edad", 1)
+Test 5: intiger validation method doing alright
+    >>> bg.integer_validator("age", 1)
 
->>> bg.integer_validator("Edad", (4,))
-Traceback (most recent call last):
-TypeError: Edad must be an integer
+Test 6: tuple given as a parameter
+    >>> bg.integer_validator("age", (4,))
+    Traceback (most recent call last):
+    TypeError: age must be an integer
 
->>> bg.integer_validator("Edad", [3])
-Traceback (most recent call last):
-TypeError: Edad must be an integer
+Test 7: list given as a parameter
+    >>> bg.integer_validator("age", [3])
+    Traceback (most recent call last):
+    TypeError: age must be an integer
 
->>> bg.integer_validator("Edad", True)
-Traceback (most recent call last):
-TypeError: Edad must be an integer
+Test 8: boolean passed as a parameter
+    >>> bg.integer_validator("age", True)
+    Traceback (most recent call last):
+    TypeError: age must be an integer
 
->>> bg.integer_validator("Edad", {3,4})
-Traceback (most recent call last):
-TypeError: Edad must be an integer
+Test 9: dictionary passed as a parameter
+    >>> bg.integer_validator("age", {3,4})
+    Traceback (most recent call last):
+    TypeError: age must be an integer
 
->>> bg.integer_validator("Edad", None)
-Traceback (most recent call last):
-TypeError: Edad must be an integer
+Test 10: No parameter given
+    >>> bg.integer_validator("age", None)
+    Traceback (most recent call last):
+    TypeError: age must be an integer
