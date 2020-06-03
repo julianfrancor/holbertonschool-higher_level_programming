@@ -12,7 +12,7 @@ Read or watch:
 * [__eq__ and __ne__](https://hynek.me/articles/hashes-and-equality/)
 * [**Setattr** attribute - adds a new attribute to an object ](https://www.programiz.com/python-programming/methods/built-in/setattr)
 * [**Hasattr** - checks if and object has the given named attribute](https://www.programiz.com/python-programming/methods/built-in/hasattr)
-* [__dict__ attribute ](https://codesachin.wordpress.com/2016/06/09/the-magic-behind-attribute-access-in-python/#:~:text=The%20__dict__%20attribute,attribute%20name%20to%20its%20value)
+* [__dict__ attribute - holds all of the attributes and methods for an object, stored as a dictionary](https://codesachin.wordpress.com/2016/06/09/the-magic-behind-attribute-access-in-python/#:~:text=The%20__dict__%20attribute,attribute%20name%20to%20its%20value)
 
 ---
 ## Learning Objectives:bulb:
