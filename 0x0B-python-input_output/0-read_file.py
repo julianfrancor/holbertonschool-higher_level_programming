@@ -23,4 +23,5 @@ def read_file(filename=""):
     The mode argument is optional; 'r' will be assumed if it’s omitted.
     """
     with open(filename, encoding="UTF8") as file:
-        print(file.read())
+        for line in file:
+            print(line, end="")
