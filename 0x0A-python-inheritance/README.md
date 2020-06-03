@@ -2,10 +2,17 @@
 
 ## Resources:books:
 Read or watch:
-* [Inheritance](https://intranet.hbtn.io/rltoken/E2Bs3bxX8GuSEKuWqswU7g)
-* [Multiple inheritance](https://intranet.hbtn.io/rltoken/auwnZOKkBZ97JaLtrMryuA)
-* [Inheritance in Python](https://intranet.hbtn.io/rltoken/ycewwwPmDpXqRp2R1FW51w)
-* [Learn to Program 10 : Inheritance Magic Methods](https://intranet.hbtn.io/rltoken/F8LUzmvPI4yur1Z37ZM1fQ)
+* [Herencia](https://entrenamiento-python-basico.readthedocs.io/es/latest/leccion9/herencia.html)
+* [Inheritance](https://www.python-course.eu/python3_inheritance.php)
+* [9.5. Inheritance](https://docs.python.org/3.4/tutorial/classes.html#inheritance)
+* [9.5.1. Multiple Inheritance](https://docs.python.org/3.4/tutorial/classes.html#multiple-inheritance)
+* [Basic inheritance](https://hub.packtpub.com/inheritance-python/)
+* [Learn to Program 10 : Inheritance Magic Methods](https://www.youtube.com/watch?v=d8kCdLCi6Lk)
+* [Finding what methods a Python object has](https://stackoverflow.com/questions/34439/finding-what-methods-a-python-object-has)
+* [__eq__ and __ne__](https://hynek.me/articles/hashes-and-equality/)
+* [Set attribute - adds a new attribute to an object ](https://www.programiz.com/python-programming/methods/built-in/setattr)
+* [hasattr - checks if and object has the given named attribute](https://www.programiz.com/python-programming/methods/built-in/hasattr)
+* [__dict__ attribute ](https://codesachin.wordpress.com/2016/06/09/the-magic-behind-attribute-access-in-python/#:~:text=The%20__dict__%20attribute,attribute%20name%20to%20its%20value)
 
 ---
 ## Learning Objectives:bulb:
