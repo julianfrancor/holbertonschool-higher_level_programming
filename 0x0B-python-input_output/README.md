@@ -2,12 +2,21 @@
 
 ## Resources:books:
 Read or watch:
-* [7.2. Reading and Writing Files](https://intranet.hbtn.io/rltoken/c5ypFfQwcM-SZ-7tr3WuxA)
-* [8.7. Predefined Clean-up Actions](https://intranet.hbtn.io/rltoken/1wqMFejKqBva-Lxws0lftw)
-* [Dive Into Python 3: Chapter 11. Files](https://intranet.hbtn.io/rltoken/8aSPOpBZj9B1DB6GfoEWfg)
-* [JSON encoder and decoder](https://intranet.hbtn.io/rltoken/XBqM3BrA_rUBw6DXw4X98Q)
-* [Learn to Program 8 : Reading / Writing Files](https://intranet.hbtn.io/rltoken/derf9VLFVDnSgX2n-drwnw)
-* [Automate the Boring Stuff with Python](https://intranet.hbtn.io/rltoken/Y77h8aeRoljlN643yKfdTg)
+* [7.2. Reading and Writing Files](https://docs.python.org/3.4/tutorial/inputoutput.html#reading-and-writing-files)
+* [8.7. Predefined Clean-up Actions](https://docs.python.org/3.4/tutorial/errors.html#predefined-clean-up-actions)
+* [Dive Into Python 3: Chapter 11. Files](http://histo.ucsf.edu/BMS270/diveintopython3-r802.pdf)
+* [JSON encoder and decoder](https://docs.python.org/3.4/library/json.html)
+* [Learn to Program 8 : Reading / Writing Files](https://www.youtube.com/watch?v=EukxMIsNeqU)
+* [Python JSON](https://www.w3schools.com/python/python_json.asp)
+* [Python File I/O](https://www.programiz.com/python-programming/file-operation)
+* [Working With Files in Python](https://realpython.com/working-with-files-in-python/)
+* [Number of lines in a file](https://tecadmin.net/count-number-of-lines-in-file-python/)
+* [json.dump( ) vs json.dumps( )](https://www.geeksforgeeks.org/python-difference-between-json-dump-and-json-dumps/)
+* [molule os - Check if file exist](https://www.guru99.com/python-check-if-file-exists.html)
+* [file from stdin](https://stackoverflow.com/questions/6415382/python-command-line-file-input-stream)
+* [``__dict__``](https://codesachin.wordpress.com/2016/06/09/the-magic-behind-attribute-access-in-python/)
+* [How dict works](https://www.tutorialspoint.com/What-does-built-in-class-attribute-dict-do-in-Python)
+* [Attribute access by ``object.__dict__``](https://codesachin.wordpress.com/2016/06/09/the-magic-behind-attribute-access-in-python/)
 
 ---
 ## Learning Objectives:bulb:
