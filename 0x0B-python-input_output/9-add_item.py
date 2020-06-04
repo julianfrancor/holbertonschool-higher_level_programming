@@ -29,6 +29,7 @@ if __name__ == "__main__":
         my_obj += sys.argv[1:]
         "save the object string in that file"
         save_to_json_file(list(my_obj), filename)
-        "if the file doesn't exist, that function creates it and ave the object"
     else:
+        """if the file doesn't exist, that function
+        creates it and ave the object"""
         save_to_json_file(list(sys.argv[1:]), filename)
