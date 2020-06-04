@@ -8,6 +8,9 @@ def pascal_triangle(n):
     Args:
         n (int): the depth of pascal's
     """
+    lista = []
+    if n <= 0:
+        return lista
     lista = [[1], [1, 1]]
     for i in range(1, n-1):
         linea = [1]
@@ -16,3 +19,4 @@ def pascal_triangle(n):
         linea += [1]
         lista.append(linea)
     return lista
+
