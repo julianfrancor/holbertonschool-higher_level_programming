@@ -36,6 +36,8 @@ class Student:
         You can assume json will always be a dictionary
         A dictionary key will be the public attribute name
         A dictionary value will be the value of the public attribute
+        json is dictionary created out from the class Student
+        so when I
         """
         if not json:
             return
