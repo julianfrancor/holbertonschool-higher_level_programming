@@ -11,12 +11,12 @@ def append_after(filename="", search_string="", new_string=""):
         search_string:
         new_string:
     """
-    aux =""
+    aux = ""
     with open(filename, mode='r', encoding="UTF8") as file:
         for k in file:
             if search_string in k:
                 aux += k[:] + new_string
             else:
-                aux += k
+                aux += k[:]
     with open(filename, mode='w', encoding="UTF8") as file:
         file.write(aux)
