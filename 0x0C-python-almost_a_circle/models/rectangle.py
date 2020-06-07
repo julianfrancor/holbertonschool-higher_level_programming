@@ -97,7 +97,10 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """Prints in stdout the Rectangle instance with the character '#'"""
+        """
+        Prints in stdout the Rectangle instance with the
+        character '#' taking care of x and y
+        """
         string = ""
         string = "\n" * self.y
         for i in range(self.height - 1):
@@ -106,6 +109,13 @@ class Rectangle(Base):
         print(string)
 
     def __str__(self):
-        """overriding the __str__ method"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-        self.x, self.y, self.width, self.height)
+        """Overriding the __str__ method"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y,
+                                                       self.width, self.height)
+
+    def update(self, *args):
+        """Assigns an argument to each attribute"""
+        args_updated = ['id', 'width', 'height', 'x', 'y']
+        if args is not None and args:
+            for index, value in enumerate(args):
+                setattr(self, args_updated[index], value)
