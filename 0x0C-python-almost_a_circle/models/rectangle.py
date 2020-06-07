@@ -26,6 +26,9 @@ class Rectangle(Base):
             __height -> height
             __x -> x
             __y -> y
+        Calling the super class with 'id' - this super() call
+        with use of the logic of the __init__ of the Base class
+        will help us to extend the functinality of the inherited method
         """
         self.width = width
         self.height = height
