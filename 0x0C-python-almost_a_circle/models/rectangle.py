@@ -125,3 +125,11 @@ class Rectangle(Base):
             args_updated = ['id', 'width', 'height', 'x', 'y']
             for index, value in enumerate(args):
                 setattr(self, args_updated[index], value)
+
+    def to_dictionary(self):
+        """
+        returns the dictionary representation of a Rectangle
+        """
+        dic_rectangle = {'id': self.id, 'width': self.width,
+                            'height': self.height, 'x': self.x, 'y': self.y}
+        return dic_rectangle
