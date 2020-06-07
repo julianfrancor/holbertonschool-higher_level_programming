@@ -44,5 +44,4 @@ class Square(Rectangle):
             self.id,
             self.x,
             self.y,
-            self.width,
-        )
+            self.width)
