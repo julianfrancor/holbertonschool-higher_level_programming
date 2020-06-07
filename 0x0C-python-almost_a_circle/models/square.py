@@ -37,7 +37,6 @@ class Square(Rectangle):
         super().__setattr__('width', value)
         super().__setattr__('height', value)
 
-
     def __str__(self):
         """Overwriting the __str__ method"""
         return "[Square] ({}) {}/{} - {}".format(
@@ -45,3 +44,26 @@ class Square(Rectangle):
             self.x,
             self.y,
             self.width)
+
+    def update(self, *args, **kwargs):
+        """
+        Assigns an argument to each attribute with args or kwargs
+        (kwargs: key-worded argument that is like a dictionary key/value)
+        here we use super().__setattr__(...) to call the method from the
+        superclass
+        """
+        if args is None or not args:
+            for key, value in kwargs.items():
+                super.__setattr__(self, key, value)
+        else:
+            args_updated = ['id', 'size', 'x', 'y']
+            for index, value in enumerate(args):
+                super.__setattr__(self, args_updated[index], value)
+
+    def to_dictionary(self):
+        """
+        Public method that returns the dictionary representation of a Square
+        """
+        dic_square = {'id': self.id, 'size': self.size,
+                      'x': self.x, 'y': self.y}
+        return dic_square
