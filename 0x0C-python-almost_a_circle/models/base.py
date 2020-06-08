@@ -32,7 +32,9 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """
-        JSON is one of the standard formats for sharing data representation
+        static method that returns the JSON string representation
+        of list_dictionaries. (JSON is one of the standard formats
+        for sharing data representation)
 
         Static method that returns the JSON string representation
         of list_dictionaries
@@ -83,3 +85,56 @@ class Base:
                 json_list_dictionaries = cls.to_json_string(mylist_of_dict)
                 "we must overwrite the file if it already exists"
                 file.write(json_list_dictionaries)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        that returns the list of the JSON string representation json_string
+        json.loads() expects to get its text from a string object
+        """
+        if json_string is None or not json_string:
+            return []
+        else:
+            return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        class method that returns an instance with all attributes already set
+        “dummy” is an instance
+        """
+        if cls.__name__ == "Rectangle":
+            """ Here we are instantiating with 2 arguments because we instantiate
+            from class rectangle like this Rectangle(width, height) """
+            dummy = cls(3,5)
+        elif cls.__name__ == "Square":
+            """ Here we are instantiating with 2 arguments because we instantiate
+            from class square like this Square(size) """
+            dummy = cls(4)
+            """here we are creating a new instance with new arguments"""
+        dummy.update(**dictionary)
+        return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        class method def load_from_file(cls): that returns a list of instances
+        json.load() expects to get the text from a file and convert it to object
+        """
+        filename = "{}.json".format(cls.__name__)
+        if not filename:
+            return []
+        else:
+            with open(filename, mode='r') as file:
+                "here we read the file and return not a string but a object"
+                dict_json = file.read()
+                "convert from object to json string respresentation of a dic"
+                string_json = cls.from_json_string(dict_json)
+                list_json = []
+                for element_kwarg in string_json:
+                    """create an object but we update the elements
+                    we are sending a **kwarg and appending it to a list """
+                    temp = cls.create(**element_kwarg)
+                    list_json.append(temp)
+                return list_json
+
