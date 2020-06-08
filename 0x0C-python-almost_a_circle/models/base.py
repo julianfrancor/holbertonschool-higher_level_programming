@@ -16,6 +16,7 @@ class Base:
         id: public instance attribute
     """
     __nb_objects = 0
+
     def __init__(self, id=None):
         """
         Initialization of the object/instance attributes
@@ -51,3 +52,34 @@ class Base:
         else:
             json_string_representation = json.dumps(list_dictionaries)
             return json_string_representation
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """
+        class method that writes the JSON string representation
+        of list_objs to a file
+        open the file with 'with', in mode='w'
+
+        json.dump() method can be used to write to file a JSON file directly.
+        this "{}.json".format(cls.__name__) is to create a file with the name
+        of each
+
+        Function and method arguments:
+        Always use 'self' for the first argument to instance methods.
+        Always use 'cls' for the first argument to class methods.
+        """
+        filename = "{}.json".format(cls.__name__)
+        with open(filename, mode='w') as file:
+            if list_objs is None:
+                json.dump("[]", file)
+            else:
+                mylist_of_dict = []
+                for myobject in list_objs:
+                    """with to_dictiorary method, we will place each
+                    value to the each key, here order matters """
+                    temp_dic = cls.to_dictionary(myobject)
+                    mylist_of_dict.append(temp_dic)
+                "we must use the method to_json_string to pass it to string"
+                json_list_dictionaries = cls.to_json_string(mylist_of_dict)
+                "we must overwrite the file if it already exists"
+                file.write(json_list_dictionaries)
