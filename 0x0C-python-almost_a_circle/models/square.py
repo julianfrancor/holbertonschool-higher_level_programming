@@ -19,7 +19,7 @@ class Square(Rectangle):
             x
             y
             id
-        Calling the super class with 'width' and 'height' as size', 'x',
+        Calling the super class with 'width' and 'height' as 'size', 'x',
         'y' and 'id' this super() call with use of the logic of the __init__
         of the Base class. super() will help us to extend the functinality
         of the inherited method
