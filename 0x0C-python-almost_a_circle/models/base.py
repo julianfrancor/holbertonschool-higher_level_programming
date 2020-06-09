@@ -73,7 +73,7 @@ class Base:
         filename = "{}.json".format(cls.__name__)
         with open(filename, mode='w') as file:
             if list_objs is None:
-                json.dump("[]", file)
+                file.write("[]")
             else:
                 mylist_of_dict = []
                 for myobject in list_objs:
