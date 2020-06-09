@@ -102,7 +102,7 @@ class TestRectangle(unittest.TestCase):
                          "\n\n  ##\n  ##\n  ##\n")
 
     def test_update_1(self):
-        """Tests """
+        """Tests correct value assigment with update"""
         r9 = Rectangle(10, 10, 10, 10)
         self.assertEqual(r9.__str__(), "[Rectangle] (1) 10/10 - 10/10")
         r9.update(89)
