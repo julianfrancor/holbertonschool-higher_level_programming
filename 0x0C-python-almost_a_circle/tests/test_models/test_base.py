@@ -17,7 +17,8 @@
 import unittest
 import pep8
 from models.base import Base
-
+from models.rectangle import Rectangle
+from models.square import Square
 
 class TestBase(unittest.TestCase):
     """
@@ -61,4 +62,44 @@ class TestBase(unittest.TestCase):
 
     def test_to_json_string(self):
         """Test method works well"""
-        
+        r1 = Rectangle(10, 7, 2, 8)
+        dictionary = r1.to_dictionary()
+        json_dictionary = Base.to_json_string([dictionary])
+        self.assertIsInstance(json_dictionary, str)
+
+        empty_dictionary = Base.to_json_string([])
+        self.assertIsInstance(empty_dictionary, str)
+        self.assertEqual(empty_dictionary, '[]')
+
+        none_dic = Base.to_json_string(None)
+        self.assertIsInstance(none_dic, list)
+        self.assertEqual(none_dic, [])
+
+        list_test = Base.from_json_string(json_dictionary)
+        self.assertIsInstance(list_test, list)
+        self.assertEqual(list_test[0]['width'], dictionary['width'])
+        self.assertEqual(list_test[0]['height'], dictionary['height'])
+        self.assertEqual(list_test[0]['x'], dictionary['x'])
+        self.assertEqual(list_test[0]['y'], dictionary['y'])
+        self.assertEqual(list_test[0]['id'], dictionary['id'])
+
+    def test_base_to_and_from_json_string_square(self):
+        r1 = Square(6, 6, 6)
+        dictionary = r1.to_dictionary()
+        json_dictionary = Base.to_json_string([dictionary])
+        self.assertIsInstance(json_dictionary, str)
+
+        empty_dictionary = Base.to_json_string([])
+        self.assertIsInstance(empty_dictionary, str)
+        self.assertEqual(empty_dictionary, '[]')
+
+        none_dic = Base.to_json_string(None)
+        self.assertIsInstance(none_dic, list)
+        self.assertEqual(none_dic, [])
+
+        list_test = Base.from_json_string(json_dictionary)
+        self.assertIsInstance(list_test, list)
+        self.assertEqual(list_test[0]['size'], dictionary['size'])
+        self.assertEqual(list_test[0]['x'], dictionary['x'])
+        self.assertEqual(list_test[0]['y'], dictionary['y'])
+        self.assertEqual(list_test[0]['id'], dictionary['id'])
