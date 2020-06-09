@@ -64,7 +64,7 @@ class Base:
 
         json.dump() method can be used to write to file a JSON file directly.
         this "{}.json".format(cls.__name__) is to create a file with the name
-        of each
+        of each class
 
         Function and method arguments:
         Always use 'self' for the first argument to instance methods.
@@ -78,7 +78,7 @@ class Base:
                 mylist_of_dict = []
                 for myobject in list_objs:
                     """with to_dictiorary method, we will place each
-                    value to the each key, here order matters """
+                    value to each key, here order matters """
                     temp_dic = cls.to_dictionary(myobject)
                     mylist_of_dict.append(temp_dic)
                 "we must use the method to_json_string to pass it to string"
@@ -106,7 +106,7 @@ class Base:
         if cls.__name__ == "Rectangle":
             """ Here we are instantiating with 2 arguments because we instantiate
             from class rectangle like this Rectangle(width, height) """
-            dummy = cls(3,5)
+            dummy = cls(3, 5)
         elif cls.__name__ == "Square":
             """ Here we are instantiating with 2 arguments because we instantiate
             from class square like this Square(size) """
@@ -119,7 +119,7 @@ class Base:
     def load_from_file(cls):
         """
         class method def load_from_file(cls): that returns a list of instances
-        json.load() expects to get the text from a file and convert it to object
+        json.load() gets the text from a file and convert it to object
         """
         filename = "{}.json".format(cls.__name__)
         if not filename:
@@ -137,4 +137,3 @@ class Base:
                     temp = cls.create(**element_kwarg)
                     list_json.append(temp)
                 return list_json
-
