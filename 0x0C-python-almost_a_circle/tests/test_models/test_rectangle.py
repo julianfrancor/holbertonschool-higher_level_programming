@@ -6,8 +6,7 @@ import sys
 from io import StringIO
 import os
 import json
-from models.rectangle import Rectangle
-from models.base import Base
+from models.rectangle import Rectangle, Base
 
 """ import:
     all the modules needed (unittest and pep8)
@@ -30,6 +29,9 @@ class TestRectangle(unittest.TestCase):
     """
 
     def setUp(self):
+        """The setUp() and tearDown() methods allow you
+        to define instructions that will be executed
+        before and after each test method"""
         Base._Base__nb_objects = 0
 
     def test_rectangle_pep8_conformance(self):
@@ -59,6 +61,19 @@ class TestRectangle(unittest.TestCase):
             Rectangle("8", 4)
         with self.assertRaises(ValueError):
             Rectangle(-8, 4)
+        with self.assertRaises(TypeError) as cm:
+            Rectangle(10, "2")
+        self.assertTrue("height must be an integer" in str(cm.exception))
+        with self.assertRaises(ValueError) as cm:
+            Rectangle(-10, 2)
+        self.assertTrue("width must be > 0" in str(cm.exception))
+        with self.assertRaises(TypeError) as cm:
+            r = Rectangle(10, 2)
+            r.x = {}
+        self.assertTrue("x must be an integer" in str(cm.exception))
+        with self.assertRaises(ValueError) as cm:
+            Rectangle(10, 2, 3, -1)
+        self.assertTrue("y must be >= 0" in str(cm.exception))
 
     def test_area(self):
         """Test area to display correct values"""
