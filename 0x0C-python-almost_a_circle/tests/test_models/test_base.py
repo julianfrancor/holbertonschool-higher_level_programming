@@ -63,8 +63,9 @@ class TestBase(unittest.TestCase):
         self.assertTrue(hasattr(b5, '_Base__nb_objects'))
 
     def test_to_json_string(self):
-        """Test method works well"""
-        """ r1 = Rectangle(10, 7, 2, 8)
+        """Test to_json_string method works well"""
+
+        r1 = Rectangle(10, 7, 2, 8)
         dictionary = r1.to_dictionary()
         json_dictionary = Base.to_json_string([dictionary])
         self.assertIsInstance(json_dictionary, str)
@@ -74,7 +75,7 @@ class TestBase(unittest.TestCase):
         self.assertEqual(empty_dictionary, '[]')
 
         none_dic = Base.to_json_string(None)
-        self.assertIsInstance(none_dic, list)
+        self.assertIsInstance(none_dic, str)
         self.assertEqual(none_dic, '[]')
 
         list_test = Base.from_json_string(json_dictionary)
@@ -83,11 +84,11 @@ class TestBase(unittest.TestCase):
         self.assertEqual(list_test[0]['height'], dictionary['height'])
         self.assertEqual(list_test[0]['x'], dictionary['x'])
         self.assertEqual(list_test[0]['y'], dictionary['y'])
-        self.assertEqual(list_test[0]['id'], dictionary['id']) """
+        self.assertEqual(list_test[0]['id'], dictionary['id'])
 
     def test_to_and_from_json_string_square(self):
-        """ Test  """
-        """  r1 = Square(6, 6, 6)
+        """ Test to_and_from_json_string"""
+        r1 = Square(6, 6, 6)
         dictionary = r1.to_dictionary()
         json_dictionary = Base.to_json_string([dictionary])
         self.assertIsInstance(json_dictionary, str)
@@ -97,7 +98,7 @@ class TestBase(unittest.TestCase):
         self.assertEqual(empty_dictionary, '[]')
 
         none_dic = Base.to_json_string(None)
-        self.assertIsInstance(none_dic, list)
+        self.assertIsInstance(none_dic, str)
         self.assertEqual(none_dic, '[]')
 
         list_test = Base.from_json_string(json_dictionary)
@@ -105,4 +106,4 @@ class TestBase(unittest.TestCase):
         self.assertEqual(list_test[0]['size'], dictionary['size'])
         self.assertEqual(list_test[0]['x'], dictionary['x'])
         self.assertEqual(list_test[0]['y'], dictionary['y'])
-        self.assertEqual(list_test[0]['id'], dictionary['id']) """
+        self.assertEqual(list_test[0]['id'], dictionary['id'])
