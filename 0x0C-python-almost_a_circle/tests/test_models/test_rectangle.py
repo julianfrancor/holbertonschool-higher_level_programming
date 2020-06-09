@@ -1,12 +1,5 @@
 #!/usr/bin/python3
 
-import unittest
-import pep8
-import sys
-from io import StringIO
-import os
-import json
-from models.rectangle import Rectangle, Base
 
 """ import:
     all the modules needed (unittest and pep8)
@@ -21,6 +14,13 @@ from models.rectangle import Rectangle, Base
     All this tests should be executed together
     we create a test case based on the Class "unittest.TestCase"
 """
+import unittest
+import pep8
+import sys
+from io import StringIO
+import os
+import json
+from models.rectangle import Rectangle, Base
 
 
 class TestRectangle(unittest.TestCase):

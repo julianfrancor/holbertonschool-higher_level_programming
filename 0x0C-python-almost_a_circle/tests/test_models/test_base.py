@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 
-import unittest
-import pep8
-from models.base import Base
 
 """ import:
     all the modules needed (unittest and pep8)
@@ -17,6 +14,9 @@ from models.base import Base
     All this tests should be executed together
     we create a test case based on the Class "unittest.TestCase"
 """
+import unittest
+import pep8
+from models.base import Base
 
 
 class TestBase(unittest.TestCase):
@@ -58,3 +58,7 @@ class TestBase(unittest.TestCase):
         """Test if Base.__nb_objects class attribute exists"""
         b5 = Base()
         self.assertTrue(hasattr(b5, '_Base__nb_objects'))
+
+    def test_to_json_string(self):
+        """Test method works well"""
+        
