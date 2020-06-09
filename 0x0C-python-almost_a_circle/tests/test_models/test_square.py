@@ -43,3 +43,12 @@ class TestSquare(unittest.TestCase):
         """Test that instantiation is correct"""
         s1 = Square(5)
         self.assertIsInstance(s1, Square)
+        s2 = Square(2, 2)
+        self.assertIsInstance(s2, Square)
+
+    def test_area(self):
+        """Test area to display correct values"""
+        s3 = Square(2, 2)
+        s4 = Square(3, 1, 3)
+        self.assertEqual(s3.area(), 4)
+        self.assertEqual(s4.area(), 9)
