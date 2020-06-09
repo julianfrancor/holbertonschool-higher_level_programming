@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 
-
 """ import:
     all the modules needed (unittest and pep8)
     all the classes and methods to be tested
@@ -30,6 +29,7 @@ class TestSquare(unittest.TestCase):
     """
     class to test Square Class with Unit test
     """
+
     def setUp(self):
         Base._Base__nb_objects = 0
 
@@ -43,4 +43,3 @@ class TestSquare(unittest.TestCase):
         """Test that instantiation is correct"""
         s1 = Square(5)
         self.assertIsInstance(s1, Square)
-

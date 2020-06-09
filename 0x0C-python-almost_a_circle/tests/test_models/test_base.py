@@ -20,10 +20,12 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
+
 class TestBase(unittest.TestCase):
     """
     class to test Base Class with Unit test
     """
+
     def setUp(self):
         Base._Base__nb_objects = 0
 

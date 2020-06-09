@@ -14,13 +14,13 @@
     All this tests should be executed together
     we create a test case based on the Class "unittest.TestCase"
 """
-import unittest
 import pep8
 import sys
 from io import StringIO
 import os
 import json
 from models.rectangle import Rectangle, Base
+import unittest
 
 
 class TestRectangle(unittest.TestCase):
