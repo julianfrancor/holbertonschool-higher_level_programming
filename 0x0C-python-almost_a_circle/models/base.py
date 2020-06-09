@@ -6,6 +6,7 @@ This class will be the “base” of all
 other classes in this project
 """
 import json
+import os.path
 
 
 class Base:
@@ -121,7 +122,7 @@ class Base:
         json.load() gets the text from a file and convert it to object
         """
         filename = "{}.json".format(cls.__name__)
-        if not filename:
+        if not os.path.isfile(filename):
             return []
         else:
             with open(filename, mode='r') as file:
