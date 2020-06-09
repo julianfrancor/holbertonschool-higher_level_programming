@@ -49,7 +49,7 @@ class Base:
         json.load() expects to get the text from a file
         can Read from an open file an convert
         """
-        if list_dictionaries is None or not list_dictionaries:
+        if list_dictionaries is None or list_dictionaries is []:
             return "[]"
         else:
             json_string_representation = json.dumps(list_dictionaries)
