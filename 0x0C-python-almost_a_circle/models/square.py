@@ -33,9 +33,11 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
-        """Here we are calling the method from the superclass"""
+        """Here we are calling the method from the superclass
         super().__setattr__('width', value)
-        super().__setattr__('height', value)
+        super().__setattr__('height', value)"""
+        self.width = value
+        self.height = value
 
     def __str__(self):
         """Overwriting the __str__ method"""
