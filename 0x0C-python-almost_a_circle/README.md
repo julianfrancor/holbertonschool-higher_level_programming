@@ -3,11 +3,25 @@
 ## Resources:books:
 Read or watch:
 * [args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)
+* [args/kwargs](https://www.youtube.com/watch?v=jj_NKNDC7Aw)
 * [JSON encoder and decoder](https://docs.python.org/3/library/json.html)
 * [unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest)
-* [Python test cheatsheet](https://intranet.hbtn.io/rltoken/SfEo3RQeAXXYI9yabFRw3g)
 * [JASON - Socratica](https://www.youtube.com/watch?v=pTT7HMqDnJw)
 * [**args y **kwargs (argumentos)](https://www.youtube.com/watch?v=jj_NKNDC7Aw)
+* [Superclass method super( ) - super().__init__(length...) ](https://realpython.com/python-super/)
+* [Decorators](https://www.python-course.eu/python3_properties.php)
+* [Inheritance](https://www.python-course.eu/python3_inheritance.php)
+* [cls](https://stackoverflow.com/questions/4613000/what-is-the-cls-variable-used-for-in-python-classes)
+* [Unittest](https://docs.python.org/3.4/library/unittest.html#unittest.TestCase.setUp)
+* [Professional Unittests](https://code.tutsplus.com/tutorials/write-professional-unit-tests-in-python--cms-25835)
+* [Simple Python Unittests](https://www.pythonsheets.com/notes/python-tests.html)
+* [Unittest - pep8](https://pep8.readthedocs.io/en/release-1.7.x/advanced.html)
+* [Display output - Unittests](https://www.devdungeon.com/content/python-use-stringio-capture-stdout-and-stderr)
+* [Display output - Unittests](https://stackoverrun.com/es/q/222678)
+* [Como Leer y Escribir Archivos CSV en Python](https://code.tutsplus.com/es/tutorials/how-to-read-and-write-csv-files-in-python--cms-29907)
+* [Reading and Writing CSV Files in Python](https://realpython.com/python-csv/)
+* [How do I convert this list of dictionaries to a csv file?](https://stackoverflow.com/questions/3086973/how-do-i-convert-this-list-of-dictionaries-to-a-csv-file)
+* [Turtle](https://michael0x2a.com/blog/turtle-examples)
 
 ---
 ## Learning Objectives:bulb:
