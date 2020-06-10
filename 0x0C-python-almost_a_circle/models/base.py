@@ -142,34 +142,20 @@ class Base:
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """class method serializes a list of object to a CSV file"""
-        if type(list_objs) is not list:
-            raise TypeError("list_objs must be a list")
-        for myobject in list_objs:
-            if not isinstance(myobject, cls):
-                raise TypeError("objects in list must be an instance of {}"
-                                .format(cls))
         for myobject in list_objs:
             lines = [myobject.to_dictionary()]
-        if cls.__name__ == "Rectangle":
-            row = ['id', 'width', 'height', 'x', 'y']
-        elif cls.__name__ == "Square":
-            row = ['id', 'size', 'x', 'y']
         filename = "{}.csv".format(cls.__name__)
-        with open(filename, 'w', encoding='UTF8') as file:
-            writer = csv.DictWriter(file, fieldnames=row)
-            for line in lines:
-                writer.writerow(line)
+        with open(filename, mode='w') as file:
+            writer = csv.DictWriter(file, lines[0].keys())
+            writer.writeheader()
+            writer.writerows(lines)
 
     @classmethod
     def load_from_file_csv(cls):
         """class method that deserializes a csv file into a list"""
         objs_list = []
-        if cls.__name__ == "Rectangle":
-            row = ['id', 'width', 'height', 'x', 'y']
-        elif cls.__name__ == "Square":
-            row = ['id', 'size', 'x', 'y']
-        filename = "{}.csv".format(cls.__name__)
-        if os.path.isfile(filename):
+        dic = {}
+        try:
             with open(filename, mode='r', encoding='UTF8') as file:
                 reader = csv.DictReader(file, fieldnames=row)
                 for row in reader:
@@ -178,5 +164,5 @@ class Base:
                         dic[key] = int(value)
                         objs_list.append(cls.create(**dic))
             return objs_list
-        else:
+        except:
             return []
