@@ -2,15 +2,20 @@
 
 ## Resources:books:
 Read or watch:
-* [What is Database & SQL?](https://intranet.hbtn.io/rltoken/khEqMKp1PHvKpfO18d4fLQ)
-* [A Basic MySQL Tutorial](https://intranet.hbtn.io/rltoken/qrONF5FZPsRxRJ2FkLVPcg)
-* [Basic SQL statements: DDL and DML](https://intranet.hbtn.io/rltoken/ibCYnC9CDgZg5NQQvccBWw)
-* [Basic queries: SQL and RA](https://intranet.hbtn.io/rltoken/yelYhpf7l0FcRIPCVfnMLw)
-* [SQL technique: functions](https://intranet.hbtn.io/rltoken/3aQcovOE-clrD8yIfxFE9Q)
+* [MySQL for Beginners - Good resource](https://www3.ntu.edu.sg/home/ehchua/programming/sql/MySQL_Beginner.html)
+* [What is Database & SQL?](https://www.youtube.com/watch?v=FR4QIeZaPeM)
+* [A Basic MySQL Tutorial](https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial)
+* [Basic SQL statements: DDL and DML](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/ddldml.php)
+* [Basic queries: SQL and RA](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/queries.php)
+* [SQL technique: functions](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/functions.php)
 * [SQL technique: subqueries](https://intranet.hbtn.io/rltoken/lTXnq6pdk59x2h_Y-q0-Hg)
-* [What makes the big difference between a backtick and an apostrophe?](https://intranet.hbtn.io/rltoken/R--kAkehyaawZFY4m1inxQ)
-* [MySQL Cheat Sheet](https://intranet.hbtn.io/rltoken/aGZu7ulJpbbKcDhcz49yrg)
-* [MySQL 5.7 SQL Statement Syntax](https://intranet.hbtn.io/rltoken/XrqR4oh6zsk0eOKoTgkA3Q)
+* [What makes the big difference between a backtick and an apostrophe?](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/subqueries.php)
+* [MySQL Cheat Sheet](https://intellipaat.com/mediaFiles/2019/02/SQL-Commands-Cheat-Sheet.pdf)
+* [MySQL 5.7 SQL Statement Syntax](https://dev.mysql.com/doc/refman/5.7/en/sql-statements.html)
+* [Create Database if not exists](https://forums.mysql.com/read.php?101,213455,213496)
+* [Difference Between DDL and DML](https://pediaa.com/what-is-the-difference-between-ddl-and-dml/)
+* [Counting all of the Rows in a Table](https://www.navicat.com/en/company/aboutus/blog/695-getting-row-counts-in-mysql-part-1)
+* [Convert all of the following to UTF8](https://stackoverflow.com/questions/6115612/how-to-convert-an-entire-mysql-database-characterset-and-collation-to-utf-8)
 
 ---
 ## Learning Objectives:bulb:
