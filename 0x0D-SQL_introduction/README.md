@@ -16,6 +16,7 @@ Read or watch:
 * [Difference Between DDL and DML](https://pediaa.com/what-is-the-difference-between-ddl-and-dml/)
 * [Counting all of the Rows in a Table](https://www.navicat.com/en/company/aboutus/blog/695-getting-row-counts-in-mysql-part-1)
 * [Convert all of the following to UTF8](https://stackoverflow.com/questions/6115612/how-to-convert-an-entire-mysql-database-characterset-and-collation-to-utf-8)
+* [Iport an SQL file using command line in mysql](https://stackoverflow.com/questions/17666249/how-do-i-import-an-sql-file-using-the-command-line-in-mysql)
 
 ---
 ## Learning Objectives:bulb:
