@@ -4,6 +4,7 @@
 -- Results must be sorted in ascending order by the show title and genre name
 -- You can use only one SELECT statement
 -- The database name will be passed as an argument of the mysql command
+-- order matters when Joining tables
 SELECT tv_shows.title, tv_genres.name
 FROM tv_show_genres
 RIGHT JOIN tv_genres
