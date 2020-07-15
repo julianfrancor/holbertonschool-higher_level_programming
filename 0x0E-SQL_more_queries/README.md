@@ -15,6 +15,10 @@ Read or watch:
 * [MySQL Tutorial](https://intranet.hbtn.io/rltoken/-uqP0a89xUl3SsmV_ZtxRA)
 * [SQL Style Guide](https://intranet.hbtn.io/rltoken/jn4SHgwVtOJF0LQYPEIs-g)
 * [MySQL 5.7 SQL Statement Syntax](https://intranet.hbtn.io/rltoken/YjNAE7DcadDbT_a7iI0sYw)
+* [Change user password on mysql](https://www.cyberciti.biz/faq/mysql-change-user-password/)
+* [NOT NULL and DEFAULT values](https://stackoverflow.com/questions/3384668/mysql-cannot-insert-null-value-in-column-but-i-have-a-default-value-specified)
+* [AUTO_INCREMENT](https://www.w3schools.com/sql/sql_autoincrement.asp)
+
 
 ---
 ## Learning Objectives:bulb:
