@@ -13,6 +13,7 @@ Read or watch:
 * [10 common stumbling blocks for SQLAlchemy newbies](https://intranet.hbtn.io/rltoken/Zb8Yc2WycLLYX8gnLlwZKw)
 * [Python SQLAlchemy Cheatsheet](https://intranet.hbtn.io/rltoken/XHPAX7-ydSou2BLWHII8Vw)
 * [SQLAlchemy ORM Tutorial for Python Developers](https://intranet.hbtn.io/rltoken/aeLSQ039BhLhamU2BjqsOw)
+* [REGEXP](https://www.geeksforgeeks.org/mysql-regular-expressions-regexp/)
 
 ---
 ## Learning Objectives:bulb:
