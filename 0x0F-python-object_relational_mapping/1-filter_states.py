@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 
 
 """
@@ -36,7 +35,8 @@ def query_select(db):
     """Selects all the row from the database and sorts them
         in ascending order by states.id and displays them"""
 
-    db.query("""SELECT * FROM states WHERE name REGEXP '^N.*'""")
+    db.query("""SELECT * FROM states WHERE name REGEXP '^N.*'
+     ORDER BY id ASC""")
     result = db.store_result()
     for row in result.fetch_row(0):
         print(row)
