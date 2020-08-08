@@ -39,11 +39,12 @@ def query_select(db, cursor_objects):
     cursor_objects.execute("""SELECT * FROM states WHERE name REGEXP '^N.*'
      ORDER BY id ASC""")
     for row in cursor_objects.fetchall():
+        if row[1][0] == 'N'
         print(row)
+    db.close()
 
 
 if __name__ == "__main__":
     db, cursor_objects = connect_to_database()
     query_select(db, cursor_objects)
-    db.close()
-    cursor_objects.close()
+
