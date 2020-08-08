@@ -27,22 +27,23 @@ def connect_to_database():
 
     db = MySQLdb.connect(host=host, port=port, passwd=password,
                          user=user, db=database)
+    cursor_objects = db.cursor()
 
-    return db
+    return db, cursor_objects
 
 
-def query_select(db):
+def query_select(db, cursor_objects):
     """Selects all the row from the database and sorts them
         in ascending order by states.id and displays them"""
 
-    db.query("""SELECT * FROM states WHERE name REGEXP '^N.*'
+    cursor_objects.execute("""SELECT * FROM states WHERE name REGEXP '^N.*'
      ORDER BY id ASC""")
-    result = db.store_result()
-    for row in result.fetch_row(0):
+    for row in cursor_objects.fetchall():
         print(row)
 
 
 if __name__ == "__main__":
-    db = connect_to_database()
-    query_select(db)
+    db, cursor_objects = connect_to_database()
+    query_select(db, cursor_objects)
     db.close()
+    cursor_objects.close()
