@@ -41,8 +41,9 @@ def query_select(db, matching_argument, cursor_objects):
         in ascending order by states.id and displays them"""
 
     cursor_objects.execute("""SELECT cities.name FROM cities
-    INNER JOIN states ON cities.state_id = states.id
-    WHERE states.name = '{:s}' ORDER BY cities.id ASC""".format(matching_argument))
+                        INNER JOIN states ON cities.state_id = states.id
+                        WHERE states.name = '{:s}'
+                        ORDER BY cities.id ASC""".format(matching_argument))
     list_cities = []
     for i in cursor_objects.fetchall():
         list_cities.append(i[0])
