@@ -39,7 +39,7 @@ def query_select(db, cursor_objects):
     cursor_objects.execute("""SELECT * FROM states WHERE name REGEXP '^N.*'
      ORDER BY id ASC""")
     for row in cursor_objects.fetchall():
-        if row[1][0] == 'N'
+        if row[1][0] == 'N':
         print(row)
 
 
