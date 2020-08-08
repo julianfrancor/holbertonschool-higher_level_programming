@@ -2,8 +2,9 @@
 
 
 """
-script that takes in an argument and displays all values in the states
-table of hbtn_0e_0_usa where name matches the argument.
+script that takes in an argument and displays all
+values in the states table of hbtn_0e_0_usa where
+name matches the argument.
 """
 import MySQLdb
 import sys
@@ -39,12 +40,12 @@ def query_select(db, cursor_objects):
     """Selects all the row from the database and sorts them
         in ascending order by states.id and displays them"""
 
-    cursor_objects.execute("""SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON cities.state_id = states.id
-    ORDER BY cities.id ASC""")
+    cursor_objects.execute("""SELECT cities.id, cities.name, states.name
+                            FROM cities
+                            INNER JOIN states ON cities.state_id = states.id
+                            ORDER BY cities.id ASC""")
     for row in cursor_objects.fetchall():
         print(row)
-
-
 
 if __name__ == "__main__":
     db, cursor_objects = connect_to_database()
