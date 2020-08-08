@@ -40,7 +40,7 @@ def query_select(db, cursor_objects):
      ORDER BY id ASC""")
     for row in cursor_objects.fetchall():
         if row[1][0] == 'N':
-        print(row)
+            print(row)
 
 
 if __name__ == "__main__":
