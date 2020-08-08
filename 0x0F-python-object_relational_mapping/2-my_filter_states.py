@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 
 
 """
@@ -44,10 +43,11 @@ def query_select(db, matching_argument):
      ORDER BY id ASC""".format(matching_argument))
     result = db.store_result()
     for row in result.fetch_row(0):
-        print(row)
+        if row[1] == matching_argument:
+            print(row)
 
 
 if __name__ == "__main__":
-    db, matching_argument  = connect_to_database()
+    db, matching_argument = connect_to_database()
     query_select(db, matching_argument)
     db.close()
