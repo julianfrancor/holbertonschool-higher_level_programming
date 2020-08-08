@@ -40,8 +40,10 @@ def query_select(db, matching_argument, cursor_objects):
     """Selects all the row from the database and sorts them
         in ascending order by states.id and displays them"""
 
-    cursor_objects.execute("""SELECT * FROM states WHERE name = "{:s}"
-     ORDER BY id ASC""".format(matching_argument))
+    cursor_objects.execute("""SELECT * FROM states
+    WHERE name = %s
+    ORDER BY id ASC""", (matching_argument, ))
+
     for row in cursor_objects.fetchall():
         if row[1] == matching_argument:
             print(row)
