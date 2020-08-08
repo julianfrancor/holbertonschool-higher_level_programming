@@ -39,7 +39,8 @@ def query_select(db, cursor_objects):
     """Selects all the row from the database and sorts them
         in ascending order by states.id and displays them"""
 
-    cursor_objects.execute("""SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON cities.state_id = states.id""")
+    cursor_objects.execute("""SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON cities.state_id = states.id
+    ORDER BY cities.id ASC""")
     for row in cursor_objects.fetchall():
         print(row)
 
