@@ -43,7 +43,8 @@ def query_select(db, matching_argument, cursor_objects):
     cursor_objects.execute("""SELECT * FROM states WHERE name = "{:s}"
      ORDER BY id ASC""".format(matching_argument))
     for row in cursor_objects.fetchall():
-        print(row)
+        if row[1] == matching_argument:
+            print(row)
 
 
 if __name__ == "__main__":
