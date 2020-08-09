@@ -4,7 +4,7 @@
 """ lists all State objects from the database hbtn_0e_6_usa
 """
 from sqlalchemy import Column, Integer, String, ForeignKey
-from model_state import Base, State
+from relationship_state import Base, State
 
 
 class City(Base):
