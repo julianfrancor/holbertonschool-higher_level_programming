@@ -33,9 +33,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     sesh = Session()
 
-    # Querying is done using the .query() method on a Session object.
-    # keep in mind the diference btwn filter = SELECT and filter_by = CREATE
-
+    # Relationship - Association of Objects
     instance_state = State()
     instance_state.name = "California"
     instance_city = City()
