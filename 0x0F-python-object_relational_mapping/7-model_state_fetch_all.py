@@ -39,4 +39,4 @@ if __name__ == "__main__":
         print("{}: {}".format(row.id, row.name))
 
     # To close the connection with the db
-    session.close()
+    sesh.close()
