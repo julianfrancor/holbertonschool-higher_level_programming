@@ -37,3 +37,6 @@ if __name__ == "__main__":
     query = sesh.query(State).filter(State.id).order_by(State.id)
     for row in query:
         print("{}: {}".format(row.id, row.name))
+
+    # To close the connection with the db
+    session.close()
