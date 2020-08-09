@@ -36,18 +36,14 @@ if __name__ == "__main__":
     # Querying is done using the .query() method on a Session object.
     # keep in mind the diference btwn filter = SELECT and filter_by = CREATE
 
-
     instance_state = State()
     instance_state.name = "California"
     instance_city = City()
     instance_city.name = "San Francisco"
     instance_state.cities.append(instance_city)
-
     # Add the new elements
     sesh.add(instance_state)
     sesh.add(instance_city)
-
-
     # Save changes
     sesh.commit()
     # To close the connection with the db
