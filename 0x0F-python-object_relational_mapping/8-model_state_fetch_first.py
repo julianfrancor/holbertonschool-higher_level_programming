@@ -41,3 +41,8 @@ if __name__ == "__main__":
         for row in query:
             if row.id == 1:
                 print("{}: {}".format(row.id, row.name))
+            else:
+                break
+
+    # To close the connection with the db
+    sesh.close()
