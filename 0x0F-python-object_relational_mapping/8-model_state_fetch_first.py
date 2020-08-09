@@ -35,6 +35,9 @@ if __name__ == "__main__":
     # Querying is done using the .query() method on a Session object.
     # keep in mind the diference btwn filter = SELECT and filter_by = CREATE
     query = sesh.query(State).filter(State.id).order_by(State.id)
-    for row in query:
-        if row.id == 1:
-            print("{}: {}".format(row.id, row.name))
+    if row == "":
+        print("Nothing")
+    else:
+        for row in query:
+            if row.id == 1:
+                print("{}: {}".format(row.id, row.name))
