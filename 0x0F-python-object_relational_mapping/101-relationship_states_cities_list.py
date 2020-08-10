@@ -41,7 +41,7 @@ if __name__ == "__main__":
     for row in query:
         print("{}: {}".format(row.id, row.name))
         for city_row in row.cities:
-            print("     {}: {}".format(city_row.id, city_row.name))
+            print("\t{}: {}".format(city_row.id, city_row.name))
 
     # To close the connection with the db
     sesh.close()
