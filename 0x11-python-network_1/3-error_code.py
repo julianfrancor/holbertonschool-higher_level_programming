@@ -15,5 +15,6 @@ def error_code_handler():
     except urllib.error.HTTPError as e:
         print ("Error code:", e.code)
 
+
 if __name__ == "__main__":
     error_code_handler()
