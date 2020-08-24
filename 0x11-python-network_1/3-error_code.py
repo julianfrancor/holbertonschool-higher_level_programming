@@ -13,7 +13,7 @@ def error_code_handler():
             body = response.read()
             print(body.decode('utf-8'))
     except urllib.error.HTTPError as e:
-        print ("Error code: ", e.code)
+        print ("Error code:", e.code)
 
 
 if __name__ == "__main__":
