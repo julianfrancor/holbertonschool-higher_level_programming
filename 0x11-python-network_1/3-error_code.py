@@ -9,7 +9,7 @@ def error_code_handler():
     "Function that raise an HTTPError"
     url = sys.argv[1]
     try:
-        with urllib.request.urlopen.(url) as response:
+        with urllib.request.urlopen(url) as response:
             body = response.read()
             print(body.decode('utf-8'))
     except urllib.error.HTTPError as e:
