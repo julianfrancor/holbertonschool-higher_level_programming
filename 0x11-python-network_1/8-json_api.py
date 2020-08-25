@@ -15,9 +15,9 @@ if __name__ == "__main__":
     try:
         """there is a decoder for JSON incorporated in Requests"""
         answer = r.json()
-        if answer is not None:
-            print("[{}] {}".format(answer['id'], answer['name']))
-        else:
+        if len(answer) == 0:
             print("No result")
+        else:
+            print("[{}] {}".format(answer['id'], answer['name']))
     except:
         print("Not a valid JSON")
