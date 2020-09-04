@@ -14,7 +14,7 @@ Read or watch:
 * [Python SQLAlchemy Cheatsheet](https://intranet.hbtn.io/rltoken/XHPAX7-ydSou2BLWHII8Vw)
 * [SQLAlchemy ORM Tutorial for Python Developers](https://intranet.hbtn.io/rltoken/aeLSQ039BhLhamU2BjqsOw)
 * [REGEXP](https://www.geeksforgeeks.org/mysql-regular-expressions-regexp/)
-
+* [SQL Injection](https://realpython.com/prevent-python-sql-injection/)
 ---
 ## Learning Objectives:bulb:
 What did I learn from this project:
