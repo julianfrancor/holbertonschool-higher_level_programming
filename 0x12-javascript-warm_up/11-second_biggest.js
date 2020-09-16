@@ -3,7 +3,7 @@
 
 const list = process.argv.slice(2);
 
-if (list.length === 0) {
+if (list.length === 0 | list.length === 1) {
   console.log(0);
 } else {
   list.sort(function (a, b) {
