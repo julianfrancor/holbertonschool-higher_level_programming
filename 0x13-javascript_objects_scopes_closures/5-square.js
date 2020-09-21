@@ -1,4 +1,7 @@
 #!/usr/bin/node
+// class Square that defines a square and inherits from Rectangle of 4-rectangle.js
+// The constructor of Rectangle must be called (by using super())
+
 
 const Rectangle = require('./4-rectangle');
 
