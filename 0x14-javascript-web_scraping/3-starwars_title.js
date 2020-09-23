@@ -1,5 +1,6 @@
 #!/usr/bin/node
-
+// You must use the Star wars API with the endpoint https://swapi-api.hbtn.io/api/films/:id
+// You must use the module request
 const url = 'https://swapi-api.hbtn.io/api/films/';
 const request = require('request');
 const movieID = process.argv[2];
@@ -11,3 +12,4 @@ request.get(requestURL).on('response', function (resp, err, body) {
     console.log(err);
   }
 });
+
